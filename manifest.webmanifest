@@ -1,0 +1,10 @@
+{
+  "name": "LearnFlex Saathi — Learn at your pace",
+  "short_name": "LearnFlex",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbfcfa",
+  "theme_color": "#236b55",
+  "description": "Adaptive learning with misconception hints, accessible learning paths, offline topic packs and live classroom participation."
+}

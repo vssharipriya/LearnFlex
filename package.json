@@ -1,0 +1,15 @@
+{
+  "name": "learnflex-saathi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LearnFlex Saathi hackathon prototype with adaptive learning and live classroom pulse",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check app.js && node --check server.js && node --check sw.js",
+    "test": "node tests/smoke-test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

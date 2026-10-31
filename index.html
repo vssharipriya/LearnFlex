@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnFlex — Learn at your pace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#236b55"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="toast" class="toast"></div>
+<section id="roleView" class="role-screen">
+  <div class="role-top">
+    <a class="brand" href="#"><span class="brand-mark">L</span><span>learn<span class="brand-accent">flex</span></span></a>
+    <span class="role-top-note">A LITTLE MORE PERSONAL</span>
+  </div>
+  <div class="role-content">
+    <div class="role-eyebrow"><span class="pulse"></span> YOUR LEARNING SPACE</div>
+    <h1>Welcome to <em>LearnFlex.</em></h1>
+    <p class="role-lead">Your learning journey, your pace. Choose how you’d like to continue.</p>
+    <div class="role-cards">
+      <button class="role-card student-role" id="chooseStudent" type="button">
+        <span class="role-icon">▤</span><span class="role-card-label">FOR LEARNERS</span>
+        <strong>I’m a Student</strong><span class="role-description">Explore lessons, practise questions, and track your progress at your own pace.</span>
+        <span class="role-cta">Continue as Student <span>→</span></span>
+      </button>
+      <button class="role-card teacher-role" id="chooseTeacher" type="button">
+        <span class="role-icon">✎</span><span class="role-card-label">FOR EDUCATORS</span>
+        <strong>I’m a Teacher</strong><span class="role-description">Monitor student progress, identify learning gaps, and support your class.</span>
+        <span class="role-cta">Continue as Teacher <span>→</span></span>
+      </button>
+    </div>
+    <div class="role-footnote"><span>✦</span> One platform. A learning path for everyone.</div>
+  </div>
+</section>
+<section id="authView" class="auth-layout hidden">
+  <div class="auth-brand">
+    <a class="brand" href="#"><span class="brand-mark">L</span><span>learn<span class="brand-accent">flex</span></span></a>
+    <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> A little more personal</div>
+      <h1>Learning that<br><em>moves with you.</em></h1>
+      <p>Find your gaps, build your basics, and grow one small win at a time.</p>
+      <div class="hero-note"><div class="note-icon">✦</div><div><b>Your pace. Your path.</b><span>Built for curious minds in Classes 6–10.</span></div></div>
+    </div>
+    <div class="auth-footer">A calmer way to learn · Made for every learner</div>
+  </div>
+  <div class="auth-panel">
+    <div class="auth-top"><span class="mobile-brand brand"><span class="brand-mark">L</span><span>learn<span class="brand-accent">flex</span></span></span><span class="tiny-label">LEARNING SPACE</span></div>
+    <div class="auth-card">
+      <button class="back-role" id="backToRoles" type="button">← Change role</button>
+      <h2 id="authTitle">Welcome back 👋</h2><p id="authSubtitle" class="muted">Pick up where you left off.</p>
+      <form id="loginForm">
+        <label for="loginId" id="idLabel">Roll number</label><input id="loginId" autocomplete="username" placeholder="e.g. LF1001" required>
+        <label for="loginPassword">Password</label><div class="password-wrap"><input id="loginPassword" type="password" autocomplete="current-password" placeholder="Enter your password" required><button type="button" id="togglePassword" class="eye" aria-label="Show password">◉</button></div>
+        <button class="btn primary full" type="submit">Enter my space <span>→</span></button>
+      </form>
+      <div class="demo-box"><div class="demo-head"><span>✦</span> Try the demo</div><div id="demoCreds">Student: <b>LF1001</b> / <b>learn123</b></div><div>Teacher: <b>TEACH01</b> / <b>teach123</b></div><button id="fillDemo" class="text-btn">Fill demo login ↗</button></div>
+      <p class="auth-disclaimer">Prototype demo · Data is saved in this browser only.</p>
+    </div>
+  </div>
+</section>
+
+<div id="appView" class="app-shell hidden">
+  <aside class="sidebar">
+    <a class="brand side-brand" href="#"><span class="brand-mark">L</span><span>learn<span class="brand-accent">flex</span></span></a>
+    <div class="workspace-label">YOUR WORKSPACE</div>
+    <nav id="sideNav"></nav>
+    <div class="sidebar-bottom"><div class="help-card"><span class="help-spark">✦</span><b>Small steps count.</b><p>Every question helps us understand how you learn.</p></div><button class="profile-mini" id="profileButton"><span class="avatar" id="sideAvatar">S</span><span><b id="sideName">Student</b><small id="sideRole">Student account</small></span><span class="dots">···</span></button></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><div><div class="breadcrumb">LearnFlex <span>/</span> <b id="pageCrumb">Overview</b></div><h2 id="pageTitle">Good morning ✨</h2></div><div class="top-actions"><label class="language-select"><span>文</span><select id="languageSelect" aria-label="Choose language"><option value="en">English</option><option value="te">తెలుగు</option><option value="hi">हिन्दी</option></select></label><label class="speech-rate-label" title="Read-aloud speed">Speed <select id="speechRateSelect" aria-label="Read-aloud speed"><option value="0.75">Slow</option><option value="0.9" selected>Normal</option><option value="1.15">Fast</option></select></label><button class="access-btn" id="readAloudBtn" type="button" title="Read page aloud">🔊 Read</button><button class="access-btn" id="contrastBtn" type="button" aria-pressed="false">◐ Contrast</button><button class="access-btn" id="dyslexiaBtn" type="button" aria-pressed="false">Aa Reading</button><button class="access-btn" id="largeTextBtn" type="button" aria-pressed="false" title="Increase text size">A+ Text</button><span class="offline-status compact" id="globalConnectionBadge" aria-live="polite">● Checking connection…</span><button class="icon-btn" id="topProfile" title="Profile">☻</button></div></header>
+    <div id="pageContent" class="page-content"></div>
+    <footer class="app-footer">LearnFlex <span>·</span> Learn a little. Grow a lot.</footer>
+  </main>
+</div>
+<div id="modalRoot"></div>
+<script src="app.js"></script>
+</body></html>
