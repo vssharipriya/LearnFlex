@@ -1,8 +1,8 @@
-# LearnFlex Saathi — Hackathon build
+# LearnFlex 
 
 This project is an extension of the LearnFlex files supplied for this task. The original student/teacher role selection, demo logins, dashboards, subjects, assessments, adaptive revision, concept map, progress reports, CSV export, Smart Recovery, language selector, accessibility controls, and projector functionality are retained and extended.
 
-## Run the full project (recommended)
+## Run the full project
 
 Requires Node.js 18 or later. No third-party npm packages are required.
 
@@ -79,7 +79,7 @@ These are public demo credentials, not secure user accounts.
 
 - `index.html` — role selection, login layout, app shell and accessibility controls
 - `styles.css` — responsive styling, learning modes, diagnostics and live-classroom UI
-- `app.js` — existing LearnFlex app plus Saathi learning modes, diagnostics, local packs and class UI
+- `app.js` — existing LearnFlex app plus learning modes, diagnostics, local packs and class UI
 - `server.js` — dependency-free Node HTTP/API server, shared demo-state sync and classroom rooms
 - `start-learnflex.bat` / `start-learnflex.sh` — quick launch helpers
 - `package.json` — run/check scripts
